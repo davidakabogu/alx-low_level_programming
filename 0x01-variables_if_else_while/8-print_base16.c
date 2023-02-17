@@ -10,7 +10,7 @@ int main(void)
 {
 	int i = 48;
 
-	while (i < 123)
+	while (i < 103)
 	{
 		if (i == 58)
 		{
