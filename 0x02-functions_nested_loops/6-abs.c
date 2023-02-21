@@ -3,7 +3,7 @@
 /**
  * _abs - computes absolute value of an integer
  *
- * @int: parameter to be passed
+ * @k: parameter to be passed
  *
  * Return: Always positive a
  */
