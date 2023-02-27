@@ -31,7 +31,7 @@ int main(void)
 		if ((sum - 2772) % 2 != 0)
 			diffhalf1++;
 
-		for (index = 0; password[i]; i++)
+		for (i = 0; password[i]; i++)
 		{
 			if (password[i] >= (33 + diffhalf1))
 			{
