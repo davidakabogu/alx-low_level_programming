@@ -26,7 +26,7 @@ char *cap_string(char *s)
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (a[i] == *(s + i - 1))
+					if (a[j] == *(s + i - 1))
 					{
 						s[i] -= 'a' - 'A';
 					}
