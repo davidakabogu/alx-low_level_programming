@@ -28,7 +28,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	r[l + 1] = '\0';
 	i--, j--, size_r--;
 	m = n1[i] - 48, n = n2[j] - 48;
-
 	while (l >= 0)
 	{
 		k = m + n + o;
