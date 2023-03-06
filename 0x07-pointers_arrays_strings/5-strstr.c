@@ -3,7 +3,7 @@
 /**
  * _strstr - this function finds the first occurrence
  *		of the substring needle in the string haystack.
- * 
+ *
  * @haystack: string to be searched.
  * @needle: substring to search for.
  *
@@ -25,6 +25,12 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
+
+	if ((haystack[i] == needle[j]) && (haystack[i] == needle[0]))
+                        {
+                                return (haystack + i);
+                        }
+
 
 	return ('\0');
 }
