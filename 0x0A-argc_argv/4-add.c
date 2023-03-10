@@ -14,6 +14,12 @@
 int main(int argc, char *argv[])
 {
 	int i, j, result = 0;
+	
+	if (argc <= 1)
+	{
+		printf("0\n");
+		return (0);
+	}
 
 	for (i = 0; i < argc; i++)
 	{
@@ -22,15 +28,11 @@ int main(int argc, char *argv[])
 			if (!(isdigit(argv[i][j])))
 			{
 				printf("Error\n");
-
 				return (1);
 			}
 		}
-
 		result += atoi(argv[i]);
 	}
-
 	printf("%d\n", result);
-
 	return (0);
 }
