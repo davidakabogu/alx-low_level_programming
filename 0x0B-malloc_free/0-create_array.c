@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 
 	else
 	{
-		ptr = malloc(sizeof(c) * size);
+		ptr = (char*) malloc(size * sizeof(c));
 
 		for (i = 0; i < size; i++)
 		{
