@@ -37,9 +37,8 @@ char *argstostr(int ac, char **av)
 		return (0);
 	}
 
-	for (i = j = l = 0; l < k; l++)
+	for (i = j = l = 0; l < k; l++, j++)
 	{
-		j++;
 		if (av[i][j] == '\0')
 		{
 			ptr[l] = '\n';
