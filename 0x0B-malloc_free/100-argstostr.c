@@ -50,6 +50,6 @@ char *argstostr(int ac, char **av)
 		if (l < k - 1)
 			ptr[l] = av[i][j];
 	}
-	ptr[l] += '\0';
+	ptr[l] = '\0';
 	return (ptr);
 }
