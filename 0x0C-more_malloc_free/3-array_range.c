@@ -20,9 +20,8 @@ int *array_range(int min, int max)
 	if (ptr == 0)
 		return (0);
 
-	for (i = 0; min <= max; i++)
+	for (i = 0; min <= max; i++, m++)
 	{
-		min++;
 		ptr[i] = min;
 	}
 
