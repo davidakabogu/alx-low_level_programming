@@ -5,6 +5,7 @@
  * malloc_checked - this function allocates memory using malloc
  *			and returns a pointer to the allocated memory.
  * @b: parameter to be passed
+ * Return: returns a pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)
@@ -20,7 +21,7 @@ void *malloc_checked(unsigned int b)
 		ptr = malloc(b);
 		if (ptr == 0)
 		{
-			exit (98);
+			exit(98);
 		}
 		return (ptr);
 	}
