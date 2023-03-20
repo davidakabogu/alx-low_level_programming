@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * new_dog - this function creates a new struct dog
@@ -37,13 +38,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (i = 0; i < iname; i++)
 	{
-		ptr->name[i] = iname[i];
+		ptr->name[i] = name[i];
 	}
 	ptr->name[i] = '\0';
 
 	for (i = 0; i < iowner; i++)
 	{
-		ptr->owner[i] = iowner[i];
+		ptr->owner[i] = owner[i];
 	}
 	ptr->owner[i] = '\0';
 	ptr->age = age;
