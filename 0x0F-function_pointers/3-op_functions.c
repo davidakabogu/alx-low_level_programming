@@ -2,8 +2,8 @@
 
 /**
  * op_add - this function sums two numbers.
- * @a: first number.
- * @b: second number.
+ * @i: first number.
+ * @j: second number.
  * Return: returns the sum
  */
 
@@ -14,8 +14,8 @@ int op_add(int i, int j)
 
 /**
  * op_sub - this function subctracts two numbers.
- * @a: first number.
- * @b: second number.
+ * @i: first number.
+ * @j: second number.
  * Return: returns the difference.
  */
 int op_sub(int i, int j)
@@ -25,8 +25,8 @@ int op_sub(int i, int j)
 
 /**
  * op_mul - this function multiplies two numbers.
- * @a: first number.
- * @b: second number.
+ * @i: first number.
+ * @j: second number.
  * Return: returns the product
  */
 
@@ -36,9 +36,9 @@ int op_mul(int i, int j)
 }
 
 /**
- * op_div - this function divides two numbers.
- * @a: first number.
- * @b: second number.
+ * op_div - this function divides two numbers
+ * @i: first number.
+ * @j: second number.
  * Return: returns the division
  */
 
@@ -54,8 +54,8 @@ int op_div(int i, int j)
 
 /**
  * op_mod -this function calculates the modulus of two numbers.
- * @a: first number.
- * @b: second number.
+ * @i: first number.
+ * @j: second number.
  * Return: returns the remainder of the division.
  */
 
