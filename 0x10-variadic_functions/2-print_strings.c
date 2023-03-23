@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * printf_strings - this function prints strings followed by a new line
+ * print_strings - this function prints strings followed by a new line
  * @separator: this is the string to be printed between the strings
  * @n: this is the number of strings passed to the function
  */
@@ -15,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 
 	va_start(strings, n);
-	
+
 	for (i = 0; i < n; i++)
 	{
 		ptr = va_arg(strings, char *);
