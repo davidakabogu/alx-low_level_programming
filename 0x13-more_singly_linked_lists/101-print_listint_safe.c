@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * free_loop_list - frees a linked list
- * @head: head of a list.
- * Return: no return.
+ * free_loop_list - this function frees a linked list
+ * @head: pointer to pointer to the head node of a linked list.
  */
 void free_loop_list(listptr_t **head)
 {
@@ -22,8 +21,8 @@ void free_loop_list(listptr_t **head)
 }
 
 /**
- * print_listint_safe - prints a linked list.
- * @head: head of a list.
+ * print_listint_safe - this function prints a linked list.
+ * @head: pointer to the head node of a linked list.
  * Return: number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head)
