@@ -61,5 +61,5 @@ size_t print_listint_safe(const listint_t *head)
 	}
 
 	free_loop_list(&list_addresses_head);
-	return (num_nodes);
+	return (num_nodes)
 }
