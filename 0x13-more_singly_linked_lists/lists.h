@@ -19,6 +19,20 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/**
+ * struct listptr_s - singly linked list of pointers
+ * @ptr: pointer to a node in a linked list
+ * @next: pointer to the next node
+ *
+ * Description: singly linked list node structure that stores a pointer to
+ * a node in a linked list and a pointer to the next node in the list
+ */
+typedef struct listptr_s
+{
+	const listint_t *ptr; /* pointer to a node in a linked list */
+	struct listptr_s *next; /* pointer to the next node */
+} listptr_t;
+
 /* function prototypes */
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
