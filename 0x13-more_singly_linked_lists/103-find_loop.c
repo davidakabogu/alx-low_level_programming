@@ -2,8 +2,7 @@
 
 /**
  * find_listint_loop - finds the loop in a linked list.
- * @head: head of a list.
- *
+ * @head: pointer to the head node of a linked list.
  * Return: the address of the node where the loop starts.
  */
 listint_t *find_listint_loop(listint_t *head)
@@ -29,6 +28,5 @@ listint_t *find_listint_loop(listint_t *head)
 			return (slow);
 		}
 	}
-
 	return (NULL);
 }
