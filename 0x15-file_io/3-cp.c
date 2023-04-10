@@ -29,7 +29,7 @@ void check_file(int file_from, int file_to, char *argv[])
  */
 int main(int argc, char *argv[])
 {
-	ssize_t bytes_written, num_chars == 1024;
+	ssize_t bytes_written, num_chars = 1024;
 	int file_from, file_to, error_close;
 	char buffer[1024];
 
