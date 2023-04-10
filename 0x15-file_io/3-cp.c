@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	check_file(file_from, file_to, argv);
 
-	while (num_chars == 1024)
+	do
 	{
 		num_chars = read(file_from, buffer, 1024);
 		if (num_chars == -1)
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 		bytes_written = write(file_to, buffer, num_chars);
 		if (bytes_written == -1)
 			check_file(0, -1, argv);
-	}
+	} while (num_chars == 1024)
 
 	error_close = close(file_from);
 	if (error_close == -1)
