@@ -4,19 +4,14 @@
 
 /**
  * f4 - finds the biggest number
- *
  * @usrn: username
  * @len: length of username
  * Return: the biggest number
  */
 int f4(char *usrn, int len)
 {
-	int ch;
-	int vch;
+	int ch = *usrn, vch = 0;
 	unsigned int rand_num;
-
-	ch = *usrn;
-	vch = 0;
 
 	while (vch < len)
 	{
@@ -24,7 +19,6 @@ int f4(char *usrn, int len)
 			ch = usrn[vch];
 		vch += 1;
 	}
-
 	srand(ch ^ 14);
 	rand_num = rand();
 
@@ -33,52 +27,41 @@ int f4(char *usrn, int len)
 
 /**
  * f5 - multiplies each char of username
- *
  * @usrn: username
  * @len: length of username
  * Return: multiplied char
  */
 int f5(char *usrn, int len)
 {
-	int ch;
-	int vch;
-
-	ch = vch = 0;
+	int ch = vch = 0;
 
 	while (vch < len)
 	{
 		ch = ch + usrn[vch] * usrn[vch];
 		vch += 1;
 	}
-
 	return (((unsigned int)ch ^ 239) & 63);
 }
 
 /**
  * f6 - generates a random char
- *
  * @usrn: username
  * Return: a random char
  */
 int f6(char *usrn)
 {
-	int ch;
-	int vch;
-
-	ch = vch = 0;
+	int ch = vch = 0;
 
 	while (vch < *usrn)
 	{
 		ch = rand();
 		vch += 1;
 	}
-
 	return (((unsigned int)ch ^ 229) & 63);
 }
 
 /**
  * main - Entry point
- *
  * @argc: arguments count
  * @argv: arguments vector
  * Return: Always 0
