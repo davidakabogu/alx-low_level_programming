@@ -33,7 +33,7 @@ int f4(char *usrn, int len)
  */
 int f5(char *usrn, int len)
 {
-	int ch = vch = 0;
+	int ch = 0, vch = ch;
 
 	while (vch < len)
 	{
@@ -50,7 +50,7 @@ int f5(char *usrn, int len)
  */
 int f6(char *usrn)
 {
-	int ch = vch = 0;
+	int ch = 0, vch = ch;
 
 	while (vch < *usrn)
 	{
